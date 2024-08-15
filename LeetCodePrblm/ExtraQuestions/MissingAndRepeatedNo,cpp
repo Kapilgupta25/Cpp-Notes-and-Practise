@@ -1,0 +1,63 @@
+#include<iostream>
+#include<vector>
+#include<bits/stdc++.h>
+using namespace std;
+
+// // time complexity of O(n) and space complexity O(n)
+// void MissingAndRepetedElement(vector<int>& nums) {
+//     int n=nums.size();
+//     vector<int>ans(n,0);
+//     for(int i=0;i<n;i++){
+//         ans[nums[i]-1]++;
+//     }
+
+//     for(int i=0;i<n;i++){
+//         if(ans[i]==2){
+//             cout<<i+1<<" is the repeated number.\n";
+//         }
+//         if(ans[i]==0){
+//             cout<<i+1<<" is the missing number.\n";
+//         }
+//     }
+// }
+
+
+// Time complexity of O(n) and space complexity O(1)
+void MissingAndRepetedElement(vector<int>& arr) {
+    int n=arr.size();
+// Subtracting 1 from each element
+    for(int i=0;i<n;i++){
+        arr[i]--;
+    }
+// Storing Occurence and number at one position
+    for(int i=0;i<n;i++){
+        int index=arr[i]%n;
+        arr[index]=arr[index]+n;
+    }
+// finding missing and repeated number
+    for(int i=0;i<n;i++){
+        if(arr[i]/n==2){
+            cout<<i+1<<" is the repeated number.\n";
+        }
+        if(arr[i]/n==0){
+            cout<<i+1<<" is missing number.\n";
+        }
+    }
+}
+
+
+int main(){
+    int n;
+    cout<<"Enter the size of vector:";
+    cin>>n;
+
+    vector<int>vec(n);
+    for (int i=0; i<n; i++){
+        cout<<"Enter the "<<i<<"th Element:";
+        cin>>vec[i];
+    }
+
+    MissingAndRepetedElement(vec);
+
+    return 0;
+}
