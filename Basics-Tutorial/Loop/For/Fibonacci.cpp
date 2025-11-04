@@ -24,6 +24,4 @@ int main()
     }
     cout<<"The "<<n<<" th fibonacci number is "<<sum<<endl;
     return 0;
-
-
 }
