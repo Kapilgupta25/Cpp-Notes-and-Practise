@@ -26,11 +26,11 @@ class Node{
 // // inserting a node at staring of linked list
 
 // int main(){
-//     Node * Head;
+//     Node *Head=NULL;
 //     Head = new Node(25);
 
 //     if(Head==NULL){
-//         Head = new Node(25);
+//         Head = new Node(30);
 //     }
 //     else{
 //         Node *temp;
@@ -52,7 +52,7 @@ class Node{
 
 //     Node * Head;
 //     Head = NULL;
-//     for(int i=0;i<4;i++){
+//     for(int i=3;i>=0;i--){
 //         if(Head==NULL){
 //             Head = new Node(arr[i]);
 //         }
@@ -75,9 +75,9 @@ class Node{
 // // Creating linked list from array while adding node to end and print it
 
 // int main(){
-//     int arr[4]={2,3,4,5};
+//     int arr[4]={21,31,41,51};
 
-//     Node * Head= NULL;
+//     Node *Head=NULL;
 //     Node *tail=NULL;
 //     for(int i=0;i<4;i++){
 //         if(Head==NULL){
@@ -107,7 +107,7 @@ class Node{
 // }
 
 
-// // Inserting Node in the given position in the linked list
+// Inserting Node in the given position in the linked list
 
 
 Node * CreateLinkedList(int arr[], int index, int size, Node*prev){

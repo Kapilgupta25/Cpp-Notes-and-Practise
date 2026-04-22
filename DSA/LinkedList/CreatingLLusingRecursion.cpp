@@ -14,7 +14,7 @@ class Node{
 };
 
 
-// Node * CreateLinkedList(int arr[], int index, int size){
+// Node* CreateLinkedList(int arr[], int index, int size){
 //     if(index==size){
 //         return NULL;
 //     }
@@ -28,8 +28,7 @@ class Node{
 // int main(){
 //     int arr[4]={2,3,4,5};
 
-//     Node * Head;
-//     Head = NULL;
+//     Node * Head=NULL;
 
 //     Head=CreateLinkedList(arr, 0, 4);
 
