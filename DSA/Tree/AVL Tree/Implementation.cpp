@@ -103,7 +103,9 @@ void inorder(Node *root){
     cout<<root->data<<" ";
     inorder(root->right);
 }
+
 int main(){
+
     Node *root=NULL;
 
     root=insert(root, 10);
